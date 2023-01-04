@@ -1,0 +1,190 @@
+/* 
+COULEURS
+
+Marron #c6996f
+Bleu #bdc5d5
+Noir #000000
+
+
+POLICES
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Pathway Gothic one
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+Benedict
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Pathway Gothic One", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    background-color: #bdc5d5;
+}
+
+.nav-link,
+.icons,
+h1,
+.hero-text button {
+    color: #c6996f;
+}
+
+.section-featured h2 {
+    font-size: 2.4rem;
+}
+
+.nav-link {
+    font-size: 30px;
+}
+
+.bg-image {
+    background-image: url(img/bg-nav-2.jpg);
+    height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icons:hover,
+.nav-link:hover {
+    color: #000000;
+    transition: all 0.5s;
+}
+
+.section {
+    width: 100%;
+}
+
+.section-hero,
+.section-gallery {
+    margin-top: 15rem;
+}
+
+.section-featured {
+    margin-top: 10rem;
+}
+
+.heading-primary {
+    font-size: 6.2rem;
+}
+
+.hero-description,
+.btn {
+    font-size: 2.4rem;
+}
+
+.logos img {
+    height: 15rem;
+    gap: 12px;
+}
+
+.logos--dark {
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+.section-gallery h2 {
+    font-size: 5.2rem;
+    color: #c6996f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+    padding: 1.6rem;
+    margin: 0 20rem;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.gallery-item {
+    position: relative;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.content {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000000bb;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+.gallery-item .content:hover {
+    opacity: 1;
+}
+
+.gallery-item .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+.gallery-item .content:hover .text {
+    opacity: 1;
+    transform: translateY(2rem);
+    -webkit-transform: translateY(2rem);
+}
+
+.contacts,
+.hours {
+    font-size: 2.4rem;
+    color: #000000;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #000000;
+    transition: all 0.4s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #000000bb;
+}
+
+.hours--day {
+    font-size: 1.6rem;
+}
+
+.modal-title,
+.modal-body {
+    font-size: 2.4rem;
+}
+
+.form-control {
+    font-size: 1.6rem;
+}
